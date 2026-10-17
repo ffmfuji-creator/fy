@@ -16,11 +16,11 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   final state = await AppState.load();
-  runApp(FocusFlowApp(state: state));
+  runApp(MinoApp(state: state));
 }
 
-class FocusFlowApp extends StatelessWidget {
-  const FocusFlowApp({super.key, required this.state});
+class MinoApp extends StatelessWidget {
+  const MinoApp({super.key, required this.state});
   final AppState state;
 
   @override
@@ -30,7 +30,7 @@ class FocusFlowApp extends StatelessWidget {
       child: ValueListenableBuilder<bool>(
         valueListenable: state.darkNotifier,
         builder: (context, dark, _) => MaterialApp(
-          title: 'FocusFlow',
+          title: 'Mino',
           debugShowCheckedModeBanner: false,
           theme: buildTheme(false),
           darkTheme: buildTheme(true),

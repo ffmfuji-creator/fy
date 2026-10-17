@@ -35,7 +35,7 @@ class TimerScreen extends StatelessWidget {
       children: [
         Row(
           children: [
-            const Text('FocusFlow',
+            const Text('Mino',
                 style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.w700,

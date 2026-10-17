@@ -104,7 +104,7 @@ class SettingsScreen extends StatelessWidget {
         ),
         const SizedBox(height: 20),
         Center(
-          child: Text('FocusFlow v0.2.0',
+          child: Text('Mino v0.2.1',
               style: TextStyle(fontSize: 12, color: mutedColor(context))),
         ),
       ],
